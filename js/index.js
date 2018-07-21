@@ -2,6 +2,10 @@ const app = angular.module('eventos', ['ngRoute'])
 
 app.run(function($rootScope) {
   $rootScope.loggedUser = JSON.parse(localStorage.getItem('user'))
+  $rootScope.logout = function() {
+    localStorage.clear()
+    location.href = '#!/auth/login'
+  }
 })
 
 angular.module('eventos').factory('checkLogin', function() {
@@ -38,6 +42,10 @@ app.config(function($routeProvider) {
       controller: 'eventosController'
     })
     .when('/create', {
+      templateUrl: 'views/Form',
+      controller: 'eventosController'
+    })
+    .when('/edit/:id', {
       templateUrl: 'views/Form',
       controller: 'eventosController'
     })

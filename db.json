@@ -8,9 +8,9 @@
   ],
   "eventos": [
     {
-      "title": "Tesge",
-      "descricao": "tewette",
-      "data": "2018-07-01T03:00:00.000Z",
+      "title": "Teste",
+      "description": "tewette",
+      "date": "2018-07-17T03:00:00.000Z",
       "id": 1
     }
   ]

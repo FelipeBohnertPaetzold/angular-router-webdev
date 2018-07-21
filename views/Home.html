@@ -1,1 +1,19 @@
-<h1>Bem vindo {{ loggedUser.name }}</h1>
+<div class="container">
+    <div class="container-header">
+        <a href="#!/create">Novo evento</a>
+        <a ng-click='logout()'>Sair</a>
+    </div>
+    <div class="columns">
+        <div class="evento-box column" ng-repeat="evento in list">
+            <div class="evento-title">
+                {{ evento.title }}
+                <span> ({{ evento.date | date:'dd/MM/yyyy' }})</span>
+            </div>
+            <div class="evento-description">{{ evento.description }}</div>
+            <div class="evento-actions">
+                <a ng-click="remove(evento.id)">Excluir</a>
+                <a href="{{ '#!/edit/' + evento.id }}">Editar</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,10 +13,16 @@ app.service('eventosService', function($http) {
     }, callback)
   }
 
+  this.remove = function(id, callback) {
+    $http.delete(`${BASE}/eventos/${id}`).then(function(res) {
+      return callback()
+    }, callback)
+  }
+
   this.save = function(data, callback) {
     var urlEventos = `${BASE}/eventos`
     if (data.id) {
-      urlEventos = `${urlEventos}/${nota.id}`
+      urlEventos = `${urlEventos}/${data.id}`
     }
     $http({
       url: urlEventos,
