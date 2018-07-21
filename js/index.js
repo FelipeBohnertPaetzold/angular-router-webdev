@@ -35,7 +35,11 @@ app.config(function($routeProvider) {
     })
     .when('/', {
       templateUrl: 'views/Home',
-      controller: 'authController'
+      controller: 'eventosController'
+    })
+    .when('/create', {
+      templateUrl: 'views/Form',
+      controller: 'eventosController'
     })
     .otherwise('/')
 })

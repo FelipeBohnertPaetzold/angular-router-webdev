@@ -11,31 +11,6 @@
   height: 100%;
 }
 
-.auth-background .card .card-header {
-  text-align: center;
-  color: #8931af;
-  padding: 20px 0;
-}
-
-.auth-background .card .card-header span {
-  color: #aaa;
-}
-
 .auth-background .card {
   z-index: 1;
-}
-
-.form-auth {
-  display: flex;
-  flex-direction: column;
-  min-width: 350px;
-  z-index: 2;
-}
-
-.form-auth input {
-  margin: 5px 0;
-  height: 40px;
-  padding: 0 10px;
-  font-size: 18px;
-  color: #8931af;
 }

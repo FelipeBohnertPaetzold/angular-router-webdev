@@ -1,0 +1,24 @@
+<div class="center-container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Evento's</h1>
+            <span>Informe os dados do evento</span>
+        </div>
+        <form ng-submit="save()">
+            <div class="error-box" ng-if="error">
+                {{ error }}
+            </div>
+            <div class="success-box" ng-if="success">
+                {{ success }}
+            </div>
+            <div class="form">
+                <input type="text" required ng-model="evento.title" placeholder="Título">
+                <textarea required rows="5" ng-model="evento.descricao" placeholder="Descrição"></textarea>
+                <input type="date" required ng-model="evento.data" placeholder="Data">
+            </div>
+            <div class="card-actions">
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -32,6 +32,38 @@ a {
   -webkit-appearance: none;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  z-index: 2;
+}
+
+.form input,
+textarea {
+  margin: 5px 0;
+  height: 40px;
+  padding: 10px 10px;
+  resize: none;
+  font-size: 18px;
+  overflow: hidden;
+  color: #8931af;
+}
+
+.form textarea {
+  height: 70px;
+}
+
+.card .card-header {
+  text-align: center;
+  color: #8931af;
+  padding: 20px 0;
+}
+
+.card .card-header span {
+  color: #aaa;
+}
+
 .center-container {
   height: 100vh;
   width: 100%;
