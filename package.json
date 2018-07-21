@@ -1,0 +1,11 @@
+{
+  "name": "Eventos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Felipe Bohnert Paetzold",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-route": "^1.7.2"
+  }
+}

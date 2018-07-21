@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../css/auth.css">
+
+<div class="center-container auth-background">
+    <div class="auth-background-overlay"></div>
+    <div class="card">
+        <div class="card-header">
+            <h1>Evento's</h1>
+            <span>Faça login para continuar</span>
+        </div>
+        <form ng-submit="login()">
+            <div class="error-box" ng-if="error">
+                {{ error }}
+            </div>
+            <div class="success-box" ng-if="success">
+                {{ success }}
+            </div>
+            <div class="form-auth">
+                <input type="text" required ng-model="auth.name" class="auth-input" placeholder="Usuário">
+                <input type="password" required="auth-input" ng-model="auth.password" placeholder="Senha">
+            </div>
+            <div class="card-actions">
+                <a href="#!/auth/register">Criar conta</a>
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>
+</div>
